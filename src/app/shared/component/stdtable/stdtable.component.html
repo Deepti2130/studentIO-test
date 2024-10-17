@@ -1,0 +1,28 @@
+<div class="table-responsive">
+  <table class="table table-striped table-dark">
+   <thead>
+    <tr>
+      <th>Sr.No.</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Contact</th>
+      <th>isActive</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr
+    [ngClass]="{
+      'text-muted':std.isActive === 'In-active'
+    }"
+    *ngFor="let std of stdsData; let i = index">
+    <td>{{i+1}}</td>
+    <td>{{std.fname}}</td>
+    <td>{{std.lname}}</td>
+    <td>{{std.email}}</td>
+    <td>{{std.contact}}</td>
+    <td>{{std.isActive === "active"? "yes":"No"}}</td>
+  </tr>
+   </tbody>
+  </table>
+</div>

@@ -1,0 +1,65 @@
+<div class="card">
+  <div class="card-body">
+<form #stdForm = "ngForm" (ngSubmit)="onstdgetdata(stdForm)">
+  <div class="form-group">
+    <label for="fname">First Name</label>
+    <input
+     ngModel
+     name="fname"
+     required
+     class="form-control"
+     type="text"
+     id="fname">
+  </div>
+
+  <div class="form-group">
+    <label for="lname">Last Name</label>
+    <input
+     ngModel
+     name="lname"
+     required
+     class="form-control"
+     type="text"
+     id="lname">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+     ngModel
+     name="email"
+     required
+     class="form-control"
+     type="text"
+     id="email">
+  </div>
+
+  <div class="form-group">
+    <label for="contact">Contact</label>
+    <input
+     ngModel
+     name="contact"
+     required
+     class="form-control"
+     type="text"
+     id="contact">
+  </div>
+
+  <div class="form-group">
+    <label for="isActive">isActive</label>
+    <select
+     ngModel
+     name="isActive"
+     required
+     class="form-control"
+     type="text"
+     id="isActive">
+     <option value="active">active</option>
+     <option value="In-active">In-active</option>
+    </select>
+</div>
+
+<button class="btn btn-sm btn-block btncss">Add student</button>
+</form>
+</div>
+</div>
